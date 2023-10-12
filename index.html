@@ -2,7 +2,46 @@
 layout: layout.html
 ---
 
-{% for post in collections.post %}
-<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-<p>{{ post.content }}</p>
-{% endfor %}
+<!-- hero -->
+<div class="hero">
+    <h1>Fruit Demo<span>The best fruits in town</span></h1>
+</div>
+
+<!-- description -->
+<div class="section">
+    <h2>a bit about us</h2>
+    <p>Cras fringilla nisi sed aliquam pellentesque. Aliquam lacus felis, rhoncus in nisl vitae, lacinia suscipit urna. Integer sit amet feugiat orci, id porta magna. In hac habitasse platea dictumst. Ut ullamcorper sapien interdum justo eleifend, eu blandit eros placerat. Morbi quis congue quam. Donec et tincidunt tortor. Suspendisse potenti. Praesent augue odio, commodo eu turpis non, lobortis porta felis. Nullam commodo sapien vel nisl blandit, lobortis sagittis tellus iaculis.</p>
+</div>
+
+<!-- top foods -->
+<div class="section" style="display: flex;">
+    <h2>some customer favs</h2>
+
+    <div class="food-fav">
+        <img src="" alt="">
+        <h3>Strawberries</h3>
+        <p>These bad boys are the freshest strawberries in town</p>
+    </div>
+    <div class="food-fav">
+        <img src="" alt="">
+        <h3>Bananas</h3>
+        <p>Bananas that will boost you up</p>
+    </div>
+    <div class="food-fav">
+        <img src="" alt="">
+        <h3>Kiwi</h3>
+        <p>Feeling exotic? Try our exotic kiwis</p>
+    </div>
+</div>
+
+<!-- blog entries -->
+<div class="section">
+    <h2>some stuff we say</h2>
+    
+    {% for post in collections.post %}
+    <div class="blog-entry">
+        <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
+</div>
