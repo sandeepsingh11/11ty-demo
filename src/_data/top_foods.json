@@ -1,0 +1,16 @@
+{
+  "foods": [
+    {
+      "name": "Strawberries",
+      "desc": "These bad boys are the freshest strawberries in town"
+    },
+    {
+      "name": "Bananas",
+      "desc": "Bananas that will boost you up"
+    },
+    {
+      "name": "Kiwis",
+      "desc": "Feeling exotic? Try our exotic kiwis"
+    }
+  ]
+}
