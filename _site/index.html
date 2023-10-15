@@ -55,22 +55,41 @@
 
     <main>
         
-<!-- hero -->
-<div class="hero">
+<!-- jumbotron -->
+
+<section class="bg-center bg-no-repeat bg-[url('/images/loid_forger.png')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Fruit Demo</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">The best fruits in town</p>
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                Order now
+                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+            <a href="/menu" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Menu
+            </a>  
+        </div>
+    </div>
+</section>
+
+<!-- <div class="hero">
     <h1>Fruit Demo<span>The best fruits in town</span></h1>
-</div>
+</div> -->
 
 <!-- description -->
-<div class="section">
-    <h2>a bit about us</h2>
+<div class="p-10">
+    <h2 class="text-4xl font-bold mb-2">A bit about us</h2>
     <p>Cras fringilla nisi sed aliquam pellentesque. Aliquam lacus felis, rhoncus in nisl vitae, lacinia suscipit urna. Integer sit amet feugiat orci, id porta magna. In hac habitasse platea dictumst. Ut ullamcorper sapien interdum justo eleifend, eu blandit eros placerat. Morbi quis congue quam. Donec et tincidunt tortor. Suspendisse potenti. Praesent augue odio, commodo eu turpis non, lobortis porta felis. Nullam commodo sapien vel nisl blandit, lobortis sagittis tellus iaculis.</p>
 </div>
 
 <!-- top foods -->
-<div class="section">
-    <h2 class="text-3xl font-bold">some customer favs</h2>
+<div class="p-10">
+    <h2 class="text-4xl font-bold mb-2">Some customer favs</h2>
 
-    <div class="flex">
+    <div class="flex mb-4">
         
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <img class="rounded-t-lg" src="/images/loid_forger.png" alt="loid forger"/>
@@ -100,26 +119,28 @@
             </div>
         
     </div>
+
+    <a href="/menu" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Menu</a>
 </div>
 
 <!-- blog entries -->
-<div class="section">
-    <h2>some stuff we say</h2>
+<div class="p-10">
+    <h2 class="text-4xl font-bold mb-2">Stuff we say</h2>
     
     
-    <div class="blog-entry">
-        <h3><a href="/posts/post1/">Post 1</a></h3>
-        <p><p>Content of Post 1! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar est neque, sed malesuada dui sodales at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec congue nulla in tortor suscipit tempor. Vestibulum ac ultricies justo. Sed a tincidunt turpis. Nam in egestas enim, ac suscipit sem. Sed aliquet dui magna, sed scelerisque felis rutrum ac.</p>
+        <div class="mb-6">
+            <h4 class="text-2xl font-bold mb-2"><a href="/posts/post1/">Post 1</a></h4>
+            <p><p>Content of Post 1! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar est neque, sed malesuada dui sodales at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec congue nulla in tortor suscipit tempor. Vestibulum ac ultricies justo. Sed a tincidunt turpis. Nam in egestas enim, ac suscipit sem. Sed aliquet dui magna, sed scelerisque felis rutrum ac.</p>
 <p>Integer porttitor quam a hendrerit bibendum. Etiam aliquet pulvinar orci a egestas. Etiam tincidunt ex vitae fermentum imperdiet. Aliquam mattis augue in neque consectetur, eu condimentum quam lobortis. Integer efficitur mattis sem, sed fermentum quam laoreet suscipit. Integer elementum justo purus, et viverra velit viverra eu. Integer condimentum justo risus, id gravida enim feugiat non. Morbi ac fringilla quam.</p>
 </p>
-    </div>
+        </div>
     
-    <div class="blog-entry">
-        <h3><a href="/posts/post2/">Post 2</a></h3>
-        <p><p>You know you want to read Post 2...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar est neque, sed malesuada dui sodales at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec congue nulla in tortor suscipit tempor. Vestibulum ac ultricies justo. Sed a tincidunt turpis. Nam in egestas enim, ac suscipit sem. Sed aliquet dui magna, sed scelerisque felis rutrum ac.</p>
+        <div class="mb-6">
+            <h4 class="text-2xl font-bold mb-2"><a href="/posts/post2/">Post 2</a></h4>
+            <p><p>You know you want to read Post 2...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar est neque, sed malesuada dui sodales at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec congue nulla in tortor suscipit tempor. Vestibulum ac ultricies justo. Sed a tincidunt turpis. Nam in egestas enim, ac suscipit sem. Sed aliquet dui magna, sed scelerisque felis rutrum ac.</p>
 <p>Integer porttitor quam a hendrerit bibendum. Etiam aliquet pulvinar orci a egestas. Etiam tincidunt ex vitae fermentum imperdiet. Aliquam mattis augue in neque consectetur, eu condimentum quam lobortis. Integer efficitur mattis sem, sed fermentum quam laoreet suscipit. Integer elementum justo purus, et viverra velit viverra eu. Integer condimentum justo risus, id gravida enim feugiat non. Morbi ac fringilla quam.</p>
 </p>
-    </div>
+        </div>
     
 </div>
     </main>
