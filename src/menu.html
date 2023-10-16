@@ -1,0 +1,35 @@
+---
+layout: layout.html
+title: Menu
+---
+
+<!-- jumbotron -->
+<section class="bg-center bg-no-repeat bg-[url('/images/loid_forger.png')] bg-gray-700 bg-blend-multiply">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">{{ title }}</h1>        
+    </div>
+</section>
+
+<!-- menu -->
+<div class="p-10">
+    <h2 class="text-4xl font-bold mb-6">Our awesome menu</h2>
+    
+    {% for section in menu %}
+        <div class="mb-6">
+            <h3 class="text-2xl font-bold mb-2">{{ section.name }}</h3>
+            <hr class="h-px mb-4 bg-gray-700 border-0">
+    
+            <div class="grid grid-cols-2 gap-4">
+                {% for food in section.foods %}
+                    <div class="grid grid-cols-2 mb-4">
+                        <h4 class="text-xl font-bold mb-2">{{ food.name }}</h4>
+                        <p class="font-bold text-right">${{ food.price }}</p>
+                        
+                        <p>{{ food.desc }}</p>
+                        <img src="/images/{{ food.image }}" alt="{{ food.name }}" class="w-64 rounded justify-self-end">
+                    </div>
+                {% endfor %}    
+            </div>
+        </div>
+    {% endfor %}
+</div>

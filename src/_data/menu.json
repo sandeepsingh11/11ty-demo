@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Breakfast",
+        "foods": [
+            {
+                "name": "Avocado Toast",
+                "desc": "It's an avocado on...toast",
+                "price": 7.50,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "Egg Bagel",
+                "desc": "We put our heart and soul into this one",
+                "price": 8.00,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "Maple Oats",
+                "desc": "Perfect for any season, not just autumn",
+                "price": 6.75,
+                "image": "loid_forger.png"
+            }
+        ]
+    },
+    {
+        "name": "Lunch",
+        "foods": [
+            {
+                "name": "Ham and Cheese Sandwich",
+                "desc": "The classic, am I right?",
+                "price": 8.50,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "Acai Bowl",
+                "desc": "We're a healthy shop so this one is kinda obligated",
+                "price": 9.50,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "PB and Banana Panini",
+                "desc": "I personally like PB and banana haha",
+                "price": 8.25,
+                "image": "loid_forger.png"
+            }
+        ]
+    },
+    {
+        "name": "Smoothies",
+        "foods": [
+            {
+                "name": "Strawberry and Banana",
+                "desc": "The go to of course",
+                "price": 8.50,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "Mango and Pineapple",
+                "desc": "The perfect mix for the heat (so like everyday)",
+                "price": 9.00,
+                "image": "loid_forger.png"
+            },
+            {
+                "name": "Milky Matcha",
+                "desc": "We need to be extra in some way",
+                "price": 9.25,
+                "image": "loid_forger.png"
+            }
+        ]
+    }
+]
